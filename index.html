@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>틱택토 게임</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>틱택토 게임</h1>
+        
+        <div class="game-info">
+            <p id="game-status">현재 차례: <span id="current-player">X</span></p>
+        </div>
+        
+        <div class="game-board">
+            <!-- 3x3 게임 보드는 JavaScript로 동적 생성 -->
+        </div>
+        
+        <div class="controls">
+            <button id="restart-btn">게임 재시작</button>
+        </div>
+        
+        <div class="scoreboard">
+            <h2>점수판</h2>
+            <p>X: <span id="score-x">0</span></p>
+            <p>O: <span id="score-o">0</span></p>
+            <p>무승부: <span id="score-draw">0</span></p>
+        </div>
+    </div>
+
+    <!-- 테스트를 위한 Jasmine 프레임워크 (개발 중에만 포함) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.9.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.9.0/jasmine-html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.9.0/boot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.9.0/jasmine.min.css">
+    
+    <!-- 게임 로직 -->
+    <script src="js/storage.js"></script>
+    <script src="js/game.js"></script>
+    
+    <!-- 테스트 스크립트 (개발 중에만 포함) -->
+    <script src="tests/game.test.js"></script>
+    <script src="tests/storage.test.js"></script>
+</body>
+</html>
