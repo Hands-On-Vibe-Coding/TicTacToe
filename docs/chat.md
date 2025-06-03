@@ -300,6 +300,31 @@ Step Id: 122
 
 **Cascade**: 튜토리얼 문서에 Husky 설정에 관한 내용을 추가했습니다. 문서화 및 마무리 섹션에 Git Hook 설정 (Husky) 항목을 추가하여 다음 내용을 포함했습니다:
 
+1. Husky 및 관련 도구 설치 방법
+2. 설정 파일 구성 방법
+3. Git Hook 설정 방법
+4. 자동화된 코드 검사 및 테스트 실행 방법
+
+**사용자**: ESLint와 Jest 관련 설정을 수정해서 커밋이 성공하도록 해줘.
+
+**Cascade**: ESLint와 Jest 관련 설정을 수정하여 커밋이 성공적으로 완료되도록 조치했습니다. 다음과 같은 변경사항을 적용했습니다:
+
+1. ESLint 관련 수정:
+
+   - ESLint 9.x 버전에 맞게 `.eslintrc.json`을 `eslint.config.js`로 변경
+   - CommonJS 형식으로 설정 파일 수정 (`export default` 대신 `module.exports` 사용)
+   - `.lintstagedrc` 파일을 수정하여 특정 디렉토리의 JS 파일만 검사하도록 변경
+
+2. Jest 관련 수정:
+
+   - `jest-environment-jsdom` 패키지 설치
+   - `game.test.js`에서 사용되지 않는 변수 제거
+
+3. Husky 설정 수정:
+   - Husky 10.0.0 버전에 맞게 `.husky/pre-commit` 파일 업데이트
+
+모든 테스트가 통과되었으며, 커밋이 성공적으로 완료되었습니다. 이제 Git hook이 정상적으로 작동하여 커밋 전에 자동으로 코드 검사, 포맷팅, 빌드, 테스트가 실행됩니다.
+
 1. 사용된 프롬프트
 2. Husky를 사용한 이유 (코드 품질 유지, 테스트 자동화, 개발 워크플로우 개선)
 3. 설정 결과 (npm 초기화, 개발 도구 설치, 설정 파일 생성, hook 설정, 스크립트 설정)
