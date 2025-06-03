@@ -51,12 +51,17 @@ TicTacToe/
 │   └── storage.js       # 로컬 스토리지 관리
 ├── tests/
 │   ├── game.test.js     # 게임 로직 테스트
-│   └── storage.test.js  # 스토리지 테스트
+│   ├── storage.test.js  # 스토리지 테스트
+│   └── index.html       # 테스트 실행 HTML 페이지
 ├── docs/
 │   ├── prd.md           # 제품 요구사항 문서
 │   ├── design.md        # 설계 문서
 │   ├── tasks.md         # 작업 체크리스트
-│   └── chat.md          # 개발 대화 기록
+│   ├── chat.md          # 개발 대화 기록
+│   ├── test-plan.md     # 테스트 계획 문서
+│   ├── global_rules.md  # 글로벌 규칙 문서(영문)
+│   ├── global_rules_ko.md # 글로벌 규칙 문서(한글)
+│   └── tutorial.md      # 바이브 코딩 튜토리얼
 ├── index.html           # 메인 HTML 파일
 └── README.md            # 프로젝트 설명
 ```
@@ -64,6 +69,18 @@ TicTacToe/
 ## 개발 방법론
 
 이 프로젝트는 TDD(테스트 주도 개발) 방식으로 코어 로직을 구현했습니다. 테스트 파일은 `tests/` 디렉토리에 있으며, Jasmine 프레임워크를 사용하여 작성되었습니다.
+
+## 프로젝트 문서
+
+이 프로젝트에는 다양한 문서가 포함되어 있으며, 모두 `docs/` 디렉토리에 위치해 있습니다:
+
+- [제품 요구사항 문서](docs/prd.md) - 프로젝트의 목표, 사용자 가치, 핵심 기능, 기술 요구사항 등을 정의합니다.
+- [설계 문서](docs/design.md) - 시스템 아키텍처, 컴포넌트 설계, 데이터 모델, 기능 설계, UI 디자인 등을 설명합니다.
+- [작업 체크리스트](docs/tasks.md) - 프로젝트 구현을 위한 단계별 작업 목록을 제공합니다.
+- [테스트 계획 문서](docs/test-plan.md) - 테스트 전략, 테스트 케이스, 테스트 범위 등을 설명합니다.
+- [글로벌 규칙 문서](docs/global_rules.md) - 프로젝트 개발에 적용되는 일반적인 규칙과 원칙을 정의합니다. ([한글 버전](docs/global_rules_ko.md))
+- [바이브 코딩 튜토리얼](docs/tutorial.md) - 바이브 코딩 방식으로 틱택토 게임을 구현하는 과정을 설명합니다.
+- [개발 대화 기록](docs/chat.md) - 프로젝트 개발 과정에서의 대화 내용을 기록합니다.
 
 ## 향후 개선 사항
 
