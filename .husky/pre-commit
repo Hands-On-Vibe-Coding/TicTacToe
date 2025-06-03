@@ -1,0 +1,8 @@
+# 린트 및 포맷팅 실행
+npx lint-staged
+
+# 빌드 실행
+npm run build
+
+# 테스트 실행
+npm test
