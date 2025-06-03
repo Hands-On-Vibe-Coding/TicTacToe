@@ -26,12 +26,14 @@
 ## 실행 방법
 
 1. 저장소 클론하기
+
    ```
    git clone https://github.com/Hands-On-Vibe-Coding/TicTacToe.git
    cd TicTacToe
    ```
 
 2. 웹 서버 실행하기 (옵션)
+
    ```
    python -m http.server 8000
    ```
@@ -81,6 +83,7 @@ TicTacToe/
 - [글로벌 규칙 문서](docs/global_rules.md) - 프로젝트 개발에 적용되는 일반적인 규칙과 원칙을 정의합니다. ([한글 버전](docs/global_rules_ko.md))
 - [바이브 코딩 튜토리얼](docs/tutorial.md) - 바이브 코딩 방식으로 틱택토 게임을 구현하는 과정을 설명합니다.
 - [개발 대화 기록](docs/chat.md) - 프로젝트 개발 과정에서의 대화 내용을 기록합니다.
+- [향후 개선점 문서](docs/improvements.md) - 프로젝트의 향후 개선 방향과 아이디어를 정리한 문서입니다.
 
 ## 향후 개선 사항
 
