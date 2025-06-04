@@ -308,6 +308,62 @@ husky를 사용해서 git hook으로 lint fix, build, test가 수행되도록 �
    npm test
    ```
 
+6. **.gitignore 파일 설정**
+
+   프로젝트에 적합한 .gitignore 파일을 생성하여 불필요한 파일이 버전 관리에 포함되지 않도록 합니다:
+
+   ```
+   # Dependencies
+   node_modules/
+
+   # Build output
+   dist/
+
+   # Environment variables
+   .env
+   .env.local
+   .env.development.local
+   .env.test.local
+   .env.production.local
+
+   # Debug logs
+   npm-debug.log*
+   yarn-debug.log*
+   yarn-error.log*
+
+   # IDE and editor files
+   .idea/
+   .vscode/*
+   !.vscode/settings.json
+   !.vscode/tasks.json
+   !.vscode/launch.json
+   !.vscode/extensions.json
+   *.suo
+   *.ntvs*
+   *.njsproj
+   *.sln
+   *.sw?
+
+   # OS generated files
+   .DS_Store
+   .DS_Store?
+   ._*
+   .Spotlight-V100
+   .Trashes
+   ehthumbs.db
+   Thumbs.db
+
+   # Test coverage
+   coverage/
+   ```
+
+   중요한 구성 파일(.prettierrc, .windsurf/ 등)는 버전 관리에 포함해야 합니다:
+
+   ```bash
+   git add .gitignore .prettierrc .windsurf/
+   git commit -m "버전 관리 설정 추가"
+   ```
+
 이제 모든 설정이 완료되었습니다. Husky Git Hook은 커밋 시점에 자동으로 코드 검사, 포맷팅, 빌드 및 테스트를 실행하여 코드 품질을 일관되게 유지하는 데 도움을 줄 것입니다.
 
 ### 향후 개선점 문서화
